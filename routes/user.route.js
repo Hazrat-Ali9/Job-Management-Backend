@@ -3,7 +3,7 @@ const userController = require("../controllers/user.controller");
 const authorization = require("../middleware/authorization");
 const verifyToken = require("../middleware/verifyToken");
 const router = express.Router();
-
+// route user
 
 router.post("/signup", userController.signup);
 router.get("/signup/confirmation/:token", userController.confirmEmail);
