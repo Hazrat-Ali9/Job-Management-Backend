@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const colors = require("colors");
 
-
+// Server js
 const app = require("./app");
 
 // database connection
