@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Company = require("../models/Company");
 const ObjectId = mongoose.Types.ObjectId;
-
+// company service
 exports.getCompaniesService = async (filters, queries) => {
   const companies = await Company.find(filters)
     .skip(queries.skip)
