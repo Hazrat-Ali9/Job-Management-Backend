@@ -3,7 +3,7 @@ const {
   getCompanyByIdService,
   getCompaniesService,
 } = require("../services/company.service");
-
+// company controller
 exports.getCompanies = async (req, res, next) => {
   try {
     let filters = { ...req.query };
