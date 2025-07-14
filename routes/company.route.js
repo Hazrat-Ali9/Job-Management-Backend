@@ -3,7 +3,7 @@ const router = express.Router();
 const companyController = require("../controllers/company.controller");
 const authorization = require("../middleware/authorization");
 const verifyToken = require("../middleware/verifyToken");
-
+// company route 
 router
   .route("/")
   .get(companyController.getCompanies)
